@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Ice Cream Order Form</h1>
+        </header>
+
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name:<br><input type="text"></input></label><br><br>
+                <label>Email:<br><input type="text"></input></label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Order Details</legend>
+                <select name="flavor" id="flavor">
+                    <option value="none">--Select a Flavor</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="chocolate">Chocolate</option>
+                </select>
+                
+                <p>Choose your waffle cone</p>  
+                <label><input type="radio" name="cone" value="waffle">Waffle Cone</input></label>
+                <label><input type="radio" name="cone" value="sugar">Sugar Cone</input></label>
+                <label><input type="radio" name="cone" value="cup">Cup</input></label>
+        
+                <p>Toppings: </p>
+                <label>
+                    <input type="checkbox" name="toppings" value="sprinkles">Sprinkles
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="nuts">Nuts
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="cherry">Cherry
+                </label>
+                <label>    
+                    <input type="checkbox" name="toppings" value="whipped-cream">Whipped Cream
+                </label><br><br>
+                <label><button type="submit" id="btnClick">Submit form</button></label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
