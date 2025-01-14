@@ -8,19 +8,18 @@
 </head>
 <body>
     <div class="main">
-        <header>
-            <h1>Ice Cream Order Form</h1>
-        </header>
-
         <form action="thankyou.html" method="get">
+            <header>
+                <h1>Ice Cream Order Form</h1>
+            </header>
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>First Name:<br><input type="text"></input></label><br><br>
+                <label>Name:<br><input type="text"></input></label><br><br>
                 <label>Email:<br><input type="text"></input></label>
             </fieldset>
-        
             <fieldset>
                 <legend>Order Details</legend>
+                <p>Choose your flavor</p>
                 <select name="flavor" id="flavor">
                     <option value="none">--Select a Flavor</option>
                     <option value="vanilla">Vanilla</option>
@@ -45,7 +44,9 @@
                 </label>
                 <label>    
                     <input type="checkbox" name="toppings" value="whipped-cream">Whipped Cream
-                </label><br><br>
+                </label><br>
+                <p>Additional Comments</p>
+                <textarea></textarea>
                 <label><button type="submit" id="btnClick">Submit form</button></label>
             </fieldset>
         </form>
